@@ -1,0 +1,228 @@
+.card-img-top {
+  height: 300px;
+  /* ajusta según tu diseño */
+  object-fit: contain;
+  /* muestra toda la imagen sin recortes */
+  background-color: #f8f8f8;
+  /* fondo neutro si sobra espacio */
+  padding: 10px;
+}
+
+.card {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.card-body {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+
+body {
+  font-family: 'Lato', sans-serif;
+  background-color: #f8f9fa;
+  /* Fondo claro y elegante */
+  margin: 0;
+  padding: 0;
+  color: #333;
+  padding-top: 70px;
+  /* Texto oscuro para buena legibilidad */
+}
+
+/* Fuente decorativa para títulos */
+h1,
+h2,
+h3,
+h4,
+p,
+.card-title {
+  font-family: 'Playfair Display', serif;
+}
+
+/* Opcional: fondo más oscuro para un estilo Tokyo Ghoul */
+.cover {
+  height: 400px;
+  background-image: url('imagen/anteiku.jpg');
+  background-size: cover;
+  background-position: center;
+  background-color: rgba(0, 0, 0, 0.6);
+  background-blend-mode: darken;
+  color: white;
+}
+
+
+/* Tarjetas con sombra y altura uniforme */
+.card {
+  border: 0 !important;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.06);
+}
+
+.card-title {
+  min-height: 3rem;
+}
+
+.card-text {
+  min-height: 10rem;
+}
+
+/* Efecto sutil al pasar el mouse */
+.card:hover {
+  transform: scale(1.03);
+  transition: transform 0.3s ease;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.icon-kaneki {
+  width: 350px;
+  height: auto;
+}
+
+.product-stripe {
+  overflow-x: scroll;
+  padding-bottom: 1rem;
+  padding-top: 1rem;
+}
+
+.stripe-container {
+  display: flex;
+  gap: 1rem;
+}
+
+.stripe-container .card {
+  width: 300px;
+  height: 100%;
+  flex-shrink: 0;
+  margin-right: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+
+.stripe-container .card:hover {
+  transform: scale(1.03);
+}
+
+.responsive-iframe {
+  position: relative;
+  overflow: hidden;
+  padding-top: 56.25%;
+  /* Relación de aspecto 16:9 */
+}
+
+.responsive-iframe iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+
+}
+.image-container{
+  width: 100%;
+  padding-top:56.25% ;
+  background-size: cover;
+  background-position:  center;
+  flex-shrink: 0;
+}
+.carousel-item img {
+  height: 400px; /* ajusta según tu diseño */
+  object-fit: cover; /* o 'contain' si quieres que se vean completas */
+  border-radius: 10px;
+}
+.product-stripe, .slider{
+    overflow-x:scroll ;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+.stripe-container, .slider-container{
+    display: flex;
+
+}
+.stripe-container .card{
+    width: 300px;
+    flex-shrink: 0;
+    margin-right: 1rem;
+}
+.responsive-iframe{
+    position: relative;
+    padding-top:56.25% ;
+}
+.responsive-iframe iframe{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.slider {
+  background: linear-gradient(135deg, #1c1c1c, #3a3a3a);
+border: 1px solid #555;
+color: #e0e0e0;
+border: 2px solid #ccc;
+  width: 100%;
+  max-width: 700px;
+  height: 300px;
+  margin: 2rem auto;
+  overflow: hidden;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  background-color: #f8f8f8;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.slider-track {
+  display: flex;
+  width: 500%; /* 5 imágenes */
+  animation: slideShow 25s ease-in-out infinite;
+}
+
+.slide {
+  flex: 0 0 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.slide img {
+  width: 80%;
+  height: auto;
+  max-height: 280px;
+  object-fit: contain;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+}
+@keyframes slideShow {
+  0%, 15% {
+    transform: translateX(0%);
+  }
+  20%, 35% {
+    transform: translateX(-100%);
+  }
+  40%, 55% {
+    transform: translateX(-200%);
+  }
+  60%, 75% {
+    transform: translateX(-300%);
+  }
+  80%, 95% {
+    transform: translateX(-400%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+.avatar{
+  width: 120px;
+  height: 120px;
+  background-position: center;
+  background-size: cover;
+  margin: 0 auto;
+}
